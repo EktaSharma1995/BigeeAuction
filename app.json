@@ -1,0 +1,16 @@
+{
+  "name": "2018-Fall-ITE-5330-0NA-Project",
+  "description": "Bigee Auction",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+    "cleardb:ignite"
+  ],
+  "buildpacks": [
+
+  ]
+}

@@ -1,0 +1,65 @@
+a, a:link, a:visited, a:hover, a:active { color: #33334C;	text-decoration: none;}
+
+/* Bootstrap classes modified */
+.img-thumbnail {background-color: transparent;}
+
+/* Menu Icon */
+div.menu-icon .bar1, .bar2, .bar3 {width: 25px;height: 3px;;margin: 6px 0;transition: 0.4s;}
+nav.navbar div.logo {display: flex; align-items: center; justify-content: space-between;}
+
+#sidebar { background-color: #2A3142; }
+
+div.sidebar-header {padding-top:30px}
+div.sidebar-header img { max-width: 30%; }
+
+#sidebar ul.nav { padding-bottom: 15px; }
+#sidebar ul.nav li a {
+    margin: 0;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px solid #272c3a;
+    color: #999;
+    transition: all 0.3s;
+}
+
+#sidebar ul.nav li a:hover { border-bottom: 1px solid #999; }
+i.arrow {
+    border: solid #999;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    float: right;
+}
+
+i.down { transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+
+
+
+#sidebarCollapse {
+    visibility: hidden;
+}
+
+
+/* Make sure to have the nav bar always visible for res > 768px */
+@media (min-width: 576px) {
+    #sidebar, #sidebar.active {
+        visibility: visible;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #sidebar {
+        visibility: hidden;
+        display: none;
+        min-height: initial;
+    }
+    #sidebar.active {
+        visibility: visible;
+        display: initial;
+    }
+    #sidebarCollapse {
+        visibility: visible;
+    }
+}
